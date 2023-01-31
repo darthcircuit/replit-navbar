@@ -30,3 +30,13 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
+.nav-bar > .nav-links > .nav-link > .project-button {
+  width: 100%;
+  display: flex;
+}
+
+.nav-bar > .nav-links > .nav-link > .project-button > .fa-html5 {
+  background-color: #321a00;
+  color: #e18f1d;
+}
