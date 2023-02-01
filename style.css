@@ -13,12 +13,20 @@ body {
 .nav-bar .fa-solid {
   margin: 0 5px;
 }
+.nav-bar .fa-chevron-down {
+  color: #9da2a6;
+  font-size: 0.5rem;
+}
 .nav-bar {
-  margin: 3px 0;
-  height: 40px;
+  margin: 0;
+  height: 50px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #0e1525;
 
   align-items: center;
   /* border: solid 1px pink; */
@@ -29,6 +37,22 @@ body {
   height: 40px;
   margin: 0 5px;
   align-items: center;
+}
+
+.nav-bar > .nav-links.project-wrapper > .nav-link:first-child {
+  color: #9da2a6;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+}
+.nav-bar > .nav-links.project-wrapper > .nav-link:first-child:hover {
+  color: inherit;
+  cursor: pointer;
+}
+
+.nav-bar > .nav-links > .nav-link.dropdown-button:hover * {
+  color: #f5f9fc;
+  cursor: pointer;
 }
 
 .nav-bar > .nav-links > .nav-link {
@@ -43,7 +67,10 @@ body {
   background-color: inherit;
   color: inherit;
   border: none;
+  margin: 0;
+  text-align: center;
 }
+
 .nav-bar > .nav-links > .project-button-wrapper > .project-button {
   width: 150px;
   display: flex;
@@ -52,10 +79,7 @@ body {
   line-height: 0;
   text-align: left;
 }
-/* .nav-bar > .nav-links > .project-button .title {
-  font-size: 0.9rem;
-  font-weight: bold;
-} */
+
 .subtitle {
   font-size: 0.8rem;
   color: #9da2a6;
@@ -81,6 +105,18 @@ body {
   border-radius: 8px;
 }
 
+.nav-bar > .nav-links > .nav-link.saved-wrapper {
+  margin-left: 10px;
+  color: #9da2a6;
+}
+.nav-bar > .nav-links > .nav-link.saved-wrapper > .saved-popout-box {
+  color: transparent;
+}
+
+.nav-bar > .nav-links > .nav-link.saved-wrapper:hover * {
+  color: #9da2a6;
+}
+
 .nav-bar > .nav-run {
   height: 40px;
 }
@@ -96,30 +132,86 @@ body {
   border: none;
 }
 
+.nav-bar > .nav-run > button:hover {
+  background-color: #009117;
+  color: #ffffff;
+}
+
 .nav-bar > .nav-run > button > .fa-play {
   margin: 0 5px 0 0;
 }
 
-.nav-bar .fa-chevron-down {
-  color: #9da2a6;
-  font-size: 0.5rem;
+.nav-bar > .nav-links.profile-wrapper {
+  width: 225px;
+  height: 40px;
+  justify-content: space-evenly;
+}
+.nav-bar > .nav-links.profile-wrapper button {
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar > .nav-links.profile-wrapper .notification-button:hover,
+.nav-link > .search-button:hover {
+  background-color: #1c2333;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .nav-bar > .nav-links > .nav-link.invite-button {
-  background-color: #1c2333;
   width: 80px;
+  height: 90%;
+}
+.nav-bar > .nav-links > .nav-link.invite-button button {
+  background-color: #1c2333;
+  width: 90%;
+  height: 90%;
   border-radius: 8px;
 }
 
-.nav-bar > .nav-links > .nav-link > .fa-user-plus {
+.nav-bar > .nav-links > .nav-link.invite-button button:hover {
+  background-color: #2b3245;
+  cursor: pointer;
+}
+
+.nav-bar > .nav-links > .nav-link .fa-user-plus {
   margin: 0 5px 0 0;
   padding: 0px;
 }
-.nav-bar > .nav-links > .nav-link > .fa-chevron-down {
+.nav-bar > .nav-links > .nav-link .fa-chevron-down {
   margin: 0;
   padding: 0px;
 }
 
-.nav-bar > .nav-links .profile-button {
+.nav-bar > .nav-links .dropdown-button {
   margin: 0 5px 0 0;
+}
+
+.nav-bar > .nav-links > .nav-link .profile-button:hover * {
+  color: #f5f9fc;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.body-content {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  /* 1fr is relational to the size available to the container. 1fr 1fr would be like having 50-50 */
+  grid-template-columns: 1fr 1fr;
+  gap: 1%;
+}
+
+.body-content > .content {
+  background-color: #2b3245;
+  border: solid 15px #0e1525;
+
+  width: 100%;
+  height: 100%;
+  padding: 15px;
 }

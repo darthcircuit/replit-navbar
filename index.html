@@ -22,12 +22,15 @@
   <body>
     <div class="nav-bar">
       <!-- Left Links -->
-      <div class="nav-links">
+      <div class="nav-links project-wrapper">
         <div class="nav-link">
-          <i class="fa-solid fa-folder-tree"></i>
+          <i class="fa-regular fa-window-maximize"></i>
         </div>
 
-        <div class="nav-link"><i class="fa-solid fa-bars"></i></div>
+        <div class="nav-link dropdown-button">
+          <i class="fa-solid fa-bars-staggered"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </div>
 
         <div class="project-button-wrapper">
           <button class="project-button">
@@ -40,7 +43,14 @@
           </button>
         </div>
 
-        <div class="nav-link"><i class="fa-solid fa-cloud"></i></div>
+        <div class="nav-link saved-wrapper">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <div class="saved-popout-box">
+            <p>
+              Saved
+            </p>
+          </div>
+        </i></div>
       </div>
 
       <!-- Run Button -->
@@ -54,23 +64,35 @@
       <!-- Right Links -->
       <div class="nav-links profile-wrapper">
         <div class="nav-link">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
 
-        <button class="invite-button nav-link">
-          <i class="fa-solid fa-user-plus"></i>
-          Invite
-        </button>
-
+        <div class="nav-link invite-button">
+          <button>
+            <i class="fa-solid fa-user-plus"></i>
+            Invite
+          </button>
+        </div>
         <div class="nav-link">
-          <i class="fa-regular fa-bell"> </i>
+          <button class="notification-button">
+            <i class="fa-regular fa-bell"> </i>
+          </button>
         </div>
-
-        <button class="nav-link profile-button">
-          <i class="fa-solid fa-circle-user profile-button"></i>
-          <i class="fa-solid fa-chevron-down"></i>
-        </button>
+        
+        <div class="nav-link">
+          <button class="profile-button dropdown-button">
+            <i class="fa-solid fa-circle-user"></i>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
       </div>
+    </div>
+
+    <div class="body-content">
+      <div class="content">Things Go Here</div>
+      <div class="content">Like Code and Magic</div>
     </div>
   </body>
 </html>
