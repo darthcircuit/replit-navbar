@@ -1,42 +1,125 @@
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   background-color: #0e1525;
+  line-height: 1.8;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 11pt;
+  color: #f5f9fc;
+  margin: 0;
 }
 
+.nav-bar .fa-solid {
+  margin: 0 5px;
+}
 .nav-bar {
-  height: 50px;
-  width:7ee 100%;
+  margin: 3px 0;
+  height: 40px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  color: white;
+
   align-items: center;
-  border: solid 1px pink;
+  /* border: solid 1px pink; */
 }
 
 .nav-bar > .nav-links {
   display: flex;
-  justify-content: space-between;
+  height: 40px;
+  margin: 0 5px;
   align-items: center;
-  border: solid 1px lime;
-  width: 125px;
 }
 
 .nav-bar > .nav-links > .nav-link {
   display: flex;
-  width: 50px;
-  height: 50px;
-  border: solid 1px yellow;
+  width: 40px;
+  height: 90%;
   justify-content: center;
   align-items: center;
 }
 
-.nav-bar > .nav-links > .nav-link > .project-button {
-  width: 100%;
+.nav-bar button {
+  background-color: inherit;
+  color: inherit;
+  border: none;
+}
+.nav-bar > .nav-links > .project-button-wrapper > .project-button {
+  width: 150px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  text-align: left;
+}
+/* .nav-bar > .nav-links > .project-button .title {
+  font-size: 0.9rem;
+  font-weight: bold;
+} */
+.subtitle {
+  font-size: 0.8rem;
+  color: #9da2a6;
 }
 
-.nav-bar > .nav-links > .nav-link > .project-button > .fa-html5 {
+.nav-bar > .nav-links > .project-button-wrapper > .project-button > .fa-html5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #321a00;
   color: #e18f1d;
+  font-size: 1.5rem;
+  width: 30px;
+  height: 30px;
+  border: #e18f1d solid 0.5px;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.nav-bar > .nav-links > .project-button-wrapper > .project-button:hover {
+  cursor: pointer;
+  border: solid 2px #1c2333;
+  border-radius: 8px;
+}
+
+.nav-bar > .nav-run {
+  height: 40px;
+}
+.nav-bar > .nav-run button {
+  color: #6cd97e;
+  background-color: #034a10;
+  width: 100px;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-bar > .nav-run > button > .fa-play {
+  margin: 0 5px 0 0;
+}
+
+.nav-bar .fa-chevron-down {
+  color: #9da2a6;
+  font-size: 0.5rem;
+}
+
+.nav-bar > .nav-links > .nav-link.invite-button {
+  background-color: #1c2333;
+  width: 80px;
+  border-radius: 8px;
+}
+
+.nav-bar > .nav-links > .nav-link > .fa-user-plus {
+  margin: 0 5px 0 0;
+  padding: 0px;
+}
+.nav-bar > .nav-links > .nav-link > .fa-chevron-down {
+  margin: 0;
+  padding: 0px;
+}
+
+.nav-bar > .nav-links .profile-button {
+  margin: 0 5px 0 0;
 }

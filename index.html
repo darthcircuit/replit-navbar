@@ -1,75 +1,76 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Replit Navbar</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Replit Navbar</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/21dfa622e2.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/21dfa622e2.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <div class="nav-bar">
-    <!-- Left Links -->
-    <div class="nav-links">
-      <div class="nav-link">
-        SIDEBAR BUTTON
-      </div>
-      
-      <div class="nav-link">
-        REPLIT BUTTON
-      </div>
-      
-      <div class="nav-link" style="width: 125px">
-        <div class="project-button">
-          <i class="fa-brands fa-html5"></i>
-          <div class="project-button-text">
-            <h4>your-cool-project</h4>
-            <p>username</p>
-          </div>
-          <i class="fa-solid fa-chevron-down"></i>
+  <body>
+    <div class="nav-bar">
+      <!-- Left Links -->
+      <div class="nav-links">
+        <div class="nav-link">
+          <i class="fa-solid fa-folder-tree"></i>
         </div>
+
+        <div class="nav-link"><i class="fa-solid fa-bars"></i></div>
+
+        <div class="project-button-wrapper">
+          <button class="project-button">
+            <i class="fa-brands fa-html5"></i>
+            <div class="project-button-text">
+              <p class="title">replit-navbar</p>
+              <p class="subtitle">darthcircuit</p>
+            </div>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </div>
+
+        <div class="nav-link"><i class="fa-solid fa-cloud"></i></div>
       </div>
-      
-      <div class="nav-link">
-        CLOUD STATUS BUTTON
-      </div> 
+
+      <!-- Run Button -->
+      <div class="nav-run">
+        <button>
+          <i class="fa-solid fa-play"></i>
+          Run
+        </button>
+      </div>
+
+      <!-- Right Links -->
+      <div class="nav-links profile-wrapper">
+        <div class="nav-link">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <button class="invite-button nav-link">
+          <i class="fa-solid fa-user-plus"></i>
+          Invite
+        </button>
+
+        <div class="nav-link">
+          <i class="fa-regular fa-bell"> </i>
+        </div>
+
+        <button class="nav-link profile-button">
+          <i class="fa-solid fa-circle-user profile-button"></i>
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+      </div>
     </div>
-
-    <!-- Run Button -->
-    <div class="nav-run">
-      <div class="nav-link">
-        i RUN BUTTON
-      </div>
-    </div>
-
-
-    <!-- Right Links -->
-    <div class="nav-links">
-      <div class="nav-link">
-        i Search
-      </div>
-      
-      <div class="nav-link">
-        i Invite Button
-  
-      </div>
-      
-      <div class="nav-link">
-        i Notifications
-  
-      </div>
-      
-      <div class="nav-link">
-        i User Profile
-  
-      </div> 
-    </div>
-  </div>
-
-</body>
-
+  </body>
 </html>
